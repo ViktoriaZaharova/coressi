@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" display="none">
+
+    <symbol id="arrow-right" viewBox="0 0 10 16">
+        <path d="M2 2L8 8L2 14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="arrow-left" viewBox="0 0 10 16">
+        <path d="M8 14L2 8L8 2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="right" viewBox="0 0 23 42">
+        <path d="M2 2L21 21L2 40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+</svg>
