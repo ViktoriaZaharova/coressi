@@ -41,6 +41,9 @@
   .header-top
     margin: 0 0 30px
 
+  .form-col
+    max-width: 509px
+
 @media only screen and (max-width: 1340px)
   footer .list-social
     width: 100%
@@ -48,7 +51,18 @@
     order: 1
     justify-content: center
 
+  header
+    font-size: 18px
+    .form-search
+      max-width: 180px
+      input
+        font-size: 18px
 
+  .form-col
+    max-width: 450px
+
+  .basket-total
+    margin: 0 0 0 30px
 
 @media only screen and (max-width: 1200px)
   main .slick-dots
@@ -76,8 +90,34 @@
     .btn
       margin: 0 0 0 20px
 
+  .form-search
+    margin: 0 0 0 10px
+
+  .menu li
+    margin: 0 10px 0 0
+
+  header
+    font-size: 15px
+
+  .user-nav
+    margin: 0 0 0 15px
+
+  .basket-total
+    font-size: 20px
+    padding: 30px
+    max-width: 450px
+
+  .order-details__name
+    font-size: 20px
+
+  .basket
+    margin: 0 0 50px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+  .contacts-box
+    text-align: center
+    margin: 0 0 20px
   header
     font-size: 18px
     line-height: normal
@@ -107,9 +147,9 @@
       left: 15px
       top: 0
       max-width: 50px
-
-  .contacts-box
-    margin: 0 auto
+    .contacts-box
+      margin: 0 auto
+      text-align: left
 
   .footer-menu
     margin: 0 20px 0 0
@@ -129,6 +169,59 @@
 
   .header-top
     margin: 0
+
+  .catalog
+    margin: 50px 0
+
+  h1
+    font-size: 50px
+
+  .form-filter
+    margin: 0 0 0 40px
+
+  .product-information
+    margin: 30px 0 0
+    .price
+      font-size: 30px
+
+  .accordion
+    max-width: none
+
+  .recommended
+    margin: 60px 0
+
+  .map
+    height: 500px
+    margin: 30px 0 0
+
+  .contacts
+    .contacts-box
+      margin: 20px 0
+      font-size: 24px
+      line-height: 30px
+      text-align: left
+    .btn
+      margin: 30px 0
+
+
+  .social
+    font-size: 20px
+
+  .links-insta, .help-box .mail
+    font-size: 30px
+
+  .basket-total
+    width: 100%
+    margin: 0
+    max-width: none
+
+  .basket h3
+    font-size: 30px
+    line-height: 30px
+    margin: 20px 0
+
+  .form-basket h4
+    font-size: 20px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -159,9 +252,52 @@
   footer
     .btn
       margin: 10px auto
+    .contacts-box
+      text-align: center
 
   .logo-icon
     max-width: 45px
+
+  .form-filter
+    width: 100%
+    margin: 20px 0 0
+
+  h1
+    font-size: 40px
+
+  header
+    margin: 0 0 30px
+
+  .product .price
+    margin: 0 0 20px
+    line-height: 30px
+
+  .article
+    padding: 0 0 20px
+    margin: 0 0 20px
+
+  .info-attention
+    margin: 20px 0
+
+  h2
+    margin: 0 0 30px
+
+  .order-details-row
+    flex-wrap: wrap
+
+  .order-details__delete
+    width: 30%
+    justify-content: flex-end
+    margin: 10px 0 0
+
+  .amount
+    margin: 0 0 0 auto
+
+  .order-details__price
+    width: 70%
+    margin: 10px 0 0
+    font-size: 20px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   .product-card__img
@@ -181,6 +317,37 @@
   .slick-dots li
     width: 20px
 
+  .btn-all
+    margin: 0 auto
+
+  .product-gallery__item
+    height: 450px
+
+
+  .product-gallery-max
+    padding: 0
+    width: 100%
+    margin: 0 0 30px
+
+  .product-gallery-preview
+    width: 100%
+    order: 1
+    .product-gallery__item
+      margin: 0 auto
+      width: calc(100% - 10px)
+
+  .order-box__footer
+    font-size: 20px
+    line-height: 20px
+
+  .sum
+    font-size: 30px
+    line-height: 30px
+
+  .order-box
+    .btn
+      margin: 20px auto 0
+
 @media only screen and (max-width: 480px)
   h2
     font-size: 30px
@@ -191,6 +358,34 @@
 
   .modal-title
     font-size: 30px
+
+  .order-box__body
+    width: 100%
+    padding: 0
+    margin: 20px 0 0
+
+  .order-box__img
+    margin: 0 auto
+
+  .order-box__footer
+    margin: 20px 0 0
+    padding: 15px 0 0
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+  .sum
+    margin: 10px auto 0
+
+  .order-details__name
+    width: 100%
+    text-align: center
+    
+  .order-details__price
+    text-align: left
+
+  .amount
+    margin: 10px auto
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -210,3 +405,17 @@
   .logo
     max-width: 120px
 
+  .form-filter
+    flex-wrap: wrap
+    label
+      width: 100%
+      margin: 0 0 10px
+
+  .mb-63
+    margin-bottom: 40px
+
+  .btn-load
+    margin: 20px auto 0
+
+  .product-gallery-preview .product-gallery__item
+    height: 100px

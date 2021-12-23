@@ -52,6 +52,30 @@ $('.about-slider').slick({
     autoplaySpeed: 2000,
 });
 
+$('.product-gallery-preview').slick({
+    slidesToShow: 5,
+    vertical: true,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor: '.product-gallery-max',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                vertical: false,
+                slidesToShow: 3,
+            }
+        }
+    ]
+});
+
+$('.product-gallery-max').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    // asNavFor: '.product-gallery-preview',
+});
+
 
 //плавный скролл
 $(document).ready(function () {
@@ -80,6 +104,22 @@ $('.catalog .row').each(function () {
 $('.btn-load').on('click', function (e) {
     e.preventDefault();
     $('.catalog-col:hidden').slice(0, 5).slideDown();
+});
+
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
 });
 
 new WOW().init();

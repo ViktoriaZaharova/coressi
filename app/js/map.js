@@ -5,20 +5,20 @@ function init () {
 
     //Центрирование и выбор масштаба карты
     var myMap = new ymaps.Map('map', {
-        center: [59.902298, 30.320899],
-        zoom: 10
+        center: [53.174148, 45.014669],
+        zoom: 14
     });
 
     // Создание своей метки
     var myPlacemark = new ymaps.Placemark(
         // Координаты метки
-        [59.902298, 30.320899] , {
+        [53.174148, 45.014669] , {
             // Свойства метки
             hintContent: '', //Подсказка при наведении на маркер
 
         }, {
             iconImageHref: 'img/marker.svg',  // картинка иконки
-            iconImageSize: [17, 25],                                      // размеры картинки
+            iconImageSize: [57, 76],                                      // размеры картинки
             // iconImageOffset: [-70, -40],// смещение картинки
 
         });
