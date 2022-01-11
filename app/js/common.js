@@ -15,7 +15,19 @@ $('.home-slider').slick({
     dots: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 10000,
+});
+
+// On slide change, pause all videos
+$('.home-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('video')[0].play();
+});
+
+// On slide chnage, play a video inside the current slide
+$('.home-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    if( $('.home-slider .slick-slide.slick-current').find('video').length !== 0) {
+        $(".home-slider .slick-current video")[0].play();
+    }
 });
 
 // слайдер категорий
